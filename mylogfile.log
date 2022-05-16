@@ -1,0 +1,482 @@
+15 05 2022 - 09:50:49.434 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 05 2022 - 09:50:49.493 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1405ms to org.eclipse.jetty.util.log.Slf4jLog
+15 05 2022 - 09:50:49.495 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 05 2022 - 09:50:49.542 [main] INFO  io.javalin.Javalin - You are running Javalin 4.5.0 (released April 24, 2022).
+15 05 2022 - 09:50:50.232 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 05 2022 - 09:50:50.234 [main] INFO  io.javalin.Javalin - Javalin started in 740ms \o/
+15 05 2022 - 10:08:47.104 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 05 2022 - 10:08:47.168 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1634ms to org.eclipse.jetty.util.log.Slf4jLog
+15 05 2022 - 10:08:47.171 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 05 2022 - 10:08:47.215 [main] INFO  io.javalin.Javalin - You are running Javalin 4.5.0 (released April 24, 2022).
+15 05 2022 - 10:08:47.831 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 05 2022 - 10:08:47.832 [main] INFO  io.javalin.Javalin - Javalin started in 662ms \o/
+15 05 2022 - 10:13:01.098 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 05 2022 - 10:13:01.166 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1404ms to org.eclipse.jetty.util.log.Slf4jLog
+15 05 2022 - 10:13:01.169 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 05 2022 - 10:13:01.221 [main] INFO  io.javalin.Javalin - You are running Javalin 4.5.0 (released April 24, 2022).
+15 05 2022 - 10:13:01.771 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 05 2022 - 10:13:01.772 [main] INFO  io.javalin.Javalin - Javalin started in 604ms \o/
+15 05 2022 - 10:13:16.383 [JettyServerThreadPool-21] WARN  io.javalin.Javalin - Uncaught exception
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "username" (class com.revature.model.User), not marked as ignorable (0 known properties: ])
+ at [Source: (String)"{
+    "username": "bach_tran",
+    "password": "password123"
+}"; line: 2, column: 18] (through reference chain: com.revature.model.User["username"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1127)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1989)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1700)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1678)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:319)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:176)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3597)
+	at io.javalin.plugin.json.JavalinJackson.fromJsonString(JavalinJackson.kt:37)
+	at io.javalin.http.Context.bodyAsClass(Context.kt:113)
+	at com.revature.controller.AuthenticationController.lambda$new$0(AuthenticationController.java:21)
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20)
+	at io.javalin.http.JavalinServlet.addHandler$lambda-0(JavalinServlet.kt:96)
+	at io.javalin.http.JavalinServlet$lifecycle$2$1$1.invoke(JavalinServlet.kt:43)
+	at io.javalin.http.JavalinServlet$lifecycle$2$1$1.invoke(JavalinServlet.kt:43)
+	at io.javalin.http.JavalinServletHandler.executeNextTask(JavalinServletHandler.kt:98)
+	at io.javalin.http.JavalinServletHandler.queueNextTaskOrFinish$lambda-1(JavalinServletHandler.kt:85)
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1187)
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2309)
+	at io.javalin.http.JavalinServletHandler.queueNextTaskOrFinish$javalin(JavalinServletHandler.kt:85)
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:89)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+15 05 2022 - 10:18:48.524 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 05 2022 - 10:18:48.580 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1446ms to org.eclipse.jetty.util.log.Slf4jLog
+15 05 2022 - 10:18:48.582 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 05 2022 - 10:18:48.650 [main] INFO  io.javalin.Javalin - You are running Javalin 4.5.0 (released April 24, 2022).
+15 05 2022 - 10:18:49.402 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 05 2022 - 10:18:49.403 [main] INFO  io.javalin.Javalin - Javalin started in 822ms \o/
+15 05 2022 - 10:19:02.633 [JettyServerThreadPool-20] WARN  io.javalin.Javalin - Uncaught exception
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "username" (class com.revature.model.User), not marked as ignorable (0 known properties: ])
+ at [Source: (String)"{
+    "username": "bach_tran",
+    "password": "password123"
+}"; line: 2, column: 18] (through reference chain: com.revature.model.User["username"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1127)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1989)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1700)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1678)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:319)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:176)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3597)
+	at io.javalin.plugin.json.JavalinJackson.fromJsonString(JavalinJackson.kt:37)
+	at io.javalin.http.Context.bodyAsClass(Context.kt:113)
+	at com.revature.controller.AuthenticationController.lambda$new$0(AuthenticationController.java:21)
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20)
+	at io.javalin.http.JavalinServlet.addHandler$lambda-0(JavalinServlet.kt:96)
+	at io.javalin.http.JavalinServlet$lifecycle$2$1$1.invoke(JavalinServlet.kt:43)
+	at io.javalin.http.JavalinServlet$lifecycle$2$1$1.invoke(JavalinServlet.kt:43)
+	at io.javalin.http.JavalinServletHandler.executeNextTask(JavalinServletHandler.kt:98)
+	at io.javalin.http.JavalinServletHandler.queueNextTaskOrFinish$lambda-1(JavalinServletHandler.kt:85)
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1187)
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2309)
+	at io.javalin.http.JavalinServletHandler.queueNextTaskOrFinish$javalin(JavalinServletHandler.kt:85)
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:89)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+15 05 2022 - 10:24:39.561 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 05 2022 - 10:24:39.623 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1794ms to org.eclipse.jetty.util.log.Slf4jLog
+15 05 2022 - 10:24:39.628 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 05 2022 - 10:24:39.685 [main] INFO  io.javalin.Javalin - You are running Javalin 4.5.0 (released April 24, 2022).
+15 05 2022 - 10:24:40.465 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 05 2022 - 10:24:40.465 [main] INFO  io.javalin.Javalin - Javalin started in 839ms \o/
+15 05 2022 - 10:24:50.128 [JettyServerThreadPool-20] WARN  io.javalin.Javalin - Uncaught exception
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "username" (class com.revature.model.User), not marked as ignorable (0 known properties: ])
+ at [Source: (String)"{
+    "username": "bach_tran",
+    "password": "password123"
+}"; line: 2, column: 18] (through reference chain: com.revature.model.User["username"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1127)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1989)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1700)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1678)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:319)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:176)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3597)
+	at io.javalin.plugin.json.JavalinJackson.fromJsonString(JavalinJackson.kt:37)
+	at io.javalin.http.Context.bodyAsClass(Context.kt:113)
+	at com.revature.controller.AuthenticationController.lambda$new$0(AuthenticationController.java:21)
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20)
+	at io.javalin.http.JavalinServlet.addHandler$lambda-0(JavalinServlet.kt:96)
+	at io.javalin.http.JavalinServlet$lifecycle$2$1$1.invoke(JavalinServlet.kt:43)
+	at io.javalin.http.JavalinServlet$lifecycle$2$1$1.invoke(JavalinServlet.kt:43)
+	at io.javalin.http.JavalinServletHandler.executeNextTask(JavalinServletHandler.kt:98)
+	at io.javalin.http.JavalinServletHandler.queueNextTaskOrFinish$lambda-1(JavalinServletHandler.kt:85)
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1187)
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2309)
+	at io.javalin.http.JavalinServletHandler.queueNextTaskOrFinish$javalin(JavalinServletHandler.kt:85)
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:89)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+15 05 2022 - 10:29:20.701 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 05 2022 - 10:29:20.753 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1371ms to org.eclipse.jetty.util.log.Slf4jLog
+15 05 2022 - 10:29:20.755 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 05 2022 - 10:29:20.804 [main] INFO  io.javalin.Javalin - You are running Javalin 4.5.0 (released April 24, 2022).
+15 05 2022 - 10:29:21.282 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 05 2022 - 10:29:21.283 [main] INFO  io.javalin.Javalin - Javalin started in 528ms \o/
+15 05 2022 - 10:41:38.311 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 05 2022 - 10:41:38.779 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @6154ms to org.eclipse.jetty.util.log.Slf4jLog
+15 05 2022 - 10:41:38.790 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 05 2022 - 10:41:38.968 [main] INFO  io.javalin.Javalin - You are running Javalin 4.5.0 (released April 24, 2022).
+15 05 2022 - 10:41:40.624 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 05 2022 - 10:41:40.625 [main] INFO  io.javalin.Javalin - Javalin started in 1842ms \o/
+15 05 2022 - 10:43:21.765 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 05 2022 - 10:43:21.824 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1935ms to org.eclipse.jetty.util.log.Slf4jLog
+15 05 2022 - 10:43:21.827 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 05 2022 - 10:43:21.883 [main] INFO  io.javalin.Javalin - You are running Javalin 4.5.0 (released April 24, 2022).
+15 05 2022 - 10:43:22.608 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 05 2022 - 10:43:22.608 [main] INFO  io.javalin.Javalin - Javalin started in 783ms \o/
+15 05 2022 - 10:44:42.095 [JettyServerThreadPool-14] WARN  io.javalin.Javalin - Uncaught exception
+javax.security.auth.login.FailedLoginException: Invalid username and/or password was provided
+	at com.revature.service.UserService.login(UserService.java:25)
+	at com.revature.controller.AuthenticationController.lambda$new$0(AuthenticationController.java:26)
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20)
+	at io.javalin.http.JavalinServlet.addHandler$lambda-0(JavalinServlet.kt:96)
+	at io.javalin.http.JavalinServlet$lifecycle$2$1$1.invoke(JavalinServlet.kt:43)
+	at io.javalin.http.JavalinServlet$lifecycle$2$1$1.invoke(JavalinServlet.kt:43)
+	at io.javalin.http.JavalinServletHandler.executeNextTask(JavalinServletHandler.kt:98)
+	at io.javalin.http.JavalinServletHandler.queueNextTaskOrFinish$lambda-1(JavalinServletHandler.kt:85)
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1187)
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2309)
+	at io.javalin.http.JavalinServletHandler.queueNextTaskOrFinish$javalin(JavalinServletHandler.kt:85)
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:89)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+15 05 2022 - 10:55:03.333 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 05 2022 - 10:55:03.420 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1411ms to org.eclipse.jetty.util.log.Slf4jLog
+15 05 2022 - 10:55:03.425 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 05 2022 - 10:55:03.493 [main] INFO  io.javalin.Javalin - You are running Javalin 4.5.0 (released April 24, 2022).
+15 05 2022 - 10:55:04.138 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 05 2022 - 10:55:04.139 [main] INFO  io.javalin.Javalin - Javalin started in 716ms \o/
+16 05 2022 - 02:24:39.849 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+16 05 2022 - 02:24:39.927 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2158ms to org.eclipse.jetty.util.log.Slf4jLog
+16 05 2022 - 02:24:39.929 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+16 05 2022 - 02:24:39.988 [main] INFO  io.javalin.Javalin - You are running Javalin 4.5.0 (released April 24, 2022).
+16 05 2022 - 02:24:40.717 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+16 05 2022 - 02:24:40.717 [main] INFO  io.javalin.Javalin - Javalin started in 789ms \o/
+16 05 2022 - 02:30:15.694 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+16 05 2022 - 02:30:15.755 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1793ms to org.eclipse.jetty.util.log.Slf4jLog
+16 05 2022 - 02:30:15.757 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+16 05 2022 - 02:30:15.803 [main] INFO  io.javalin.Javalin - You are running Javalin 4.5.0 (released April 24, 2022).
+16 05 2022 - 02:30:16.344 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+16 05 2022 - 02:30:16.345 [main] INFO  io.javalin.Javalin - Javalin started in 589ms \o/
+16 05 2022 - 02:30:27.543 [JettyServerThreadPool-18] WARN  io.javalin.Javalin - Uncaught exception
+java.lang.NullPointerException: Parameter specified as non-null is null: method io.javalin.http.Context.json, parameter obj
+	at io.javalin.http.Context.json(Context.kt)
+	at com.revature.controller.AssignmentController.lambda$new$0(AssignmentController.java:13)
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20)
+	at io.javalin.http.JavalinServlet.addHandler$lambda-0(JavalinServlet.kt:96)
+	at io.javalin.http.JavalinServlet$lifecycle$2$1$1.invoke(JavalinServlet.kt:43)
+	at io.javalin.http.JavalinServlet$lifecycle$2$1$1.invoke(JavalinServlet.kt:43)
+	at io.javalin.http.JavalinServletHandler.executeNextTask(JavalinServletHandler.kt:98)
+	at io.javalin.http.JavalinServletHandler.queueNextTaskOrFinish$lambda-1(JavalinServletHandler.kt:85)
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1187)
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2309)
+	at io.javalin.http.JavalinServletHandler.queueNextTaskOrFinish$javalin(JavalinServletHandler.kt:85)
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:89)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+16 05 2022 - 02:40:51.154 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+16 05 2022 - 02:40:51.216 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1678ms to org.eclipse.jetty.util.log.Slf4jLog
+16 05 2022 - 02:40:51.219 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+16 05 2022 - 02:40:51.271 [main] INFO  io.javalin.Javalin - You are running Javalin 4.5.0 (released April 24, 2022).
+16 05 2022 - 02:40:51.798 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+16 05 2022 - 02:40:51.799 [main] INFO  io.javalin.Javalin - Javalin started in 582ms \o/
+16 05 2022 - 02:59:25.989 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+16 05 2022 - 02:59:26.189 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @3573ms to org.eclipse.jetty.util.log.Slf4jLog
+16 05 2022 - 02:59:26.212 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+16 05 2022 - 02:59:26.385 [main] INFO  io.javalin.Javalin - You are running Javalin 4.5.0 (released April 24, 2022).
+16 05 2022 - 02:59:27.684 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+16 05 2022 - 02:59:27.684 [main] INFO  io.javalin.Javalin - Javalin started in 1488ms \o/
+16 05 2022 - 03:03:58.006 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+16 05 2022 - 03:03:58.061 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1698ms to org.eclipse.jetty.util.log.Slf4jLog
+16 05 2022 - 03:03:58.064 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+16 05 2022 - 03:03:58.215 [main] INFO  io.javalin.Javalin - You are running Javalin 4.5.0 (released April 24, 2022).
+16 05 2022 - 03:03:59.119 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+16 05 2022 - 03:03:59.120 [main] INFO  io.javalin.Javalin - Javalin started in 1058ms \o/
+16 05 2022 - 03:07:30.691 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+16 05 2022 - 03:07:30.744 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1273ms to org.eclipse.jetty.util.log.Slf4jLog
+16 05 2022 - 03:07:30.746 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+16 05 2022 - 03:07:30.794 [main] INFO  io.javalin.Javalin - You are running Javalin 4.5.0 (released April 24, 2022).
+16 05 2022 - 03:07:31.428 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+16 05 2022 - 03:07:31.429 [main] INFO  io.javalin.Javalin - Javalin started in 684ms \o/
+16 05 2022 - 03:09:49.358 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+16 05 2022 - 03:09:49.405 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1040ms to org.eclipse.jetty.util.log.Slf4jLog
+16 05 2022 - 03:09:49.407 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+16 05 2022 - 03:09:49.448 [main] INFO  io.javalin.Javalin - You are running Javalin 4.5.0 (released April 24, 2022).
+16 05 2022 - 03:09:49.988 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+16 05 2022 - 03:09:49.988 [main] INFO  io.javalin.Javalin - Javalin started in 582ms \o/
